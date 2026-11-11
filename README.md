@@ -60,6 +60,9 @@ flowchart LR
     F --> U[Web UI · risk tier · fix · JSON export]
 ```
 
+<img width="2720" height="2160" alt="hackathon_dark_pattern_auditor_pipeline" src="https://github.com/user-attachments/assets/7ab7dbaa-de26-45c7-ad28-ed4cfff53623" />
+
+
 **Categories detected:** Urgency, Scarcity, Social Proof, Misdirection (confirmshaming and visual), Preselected Choice, Other Dark Pattern (sneaking, obstruction, forced action), and Not Dark Pattern, which gives a clear "clean interface" result.
 
 | Category | Signal |
@@ -100,6 +103,9 @@ Output layer                768 → 6 category scores                          �
 Softmax → category + confidence   (then temperature-calibrated)
 ```
 
+<img width="2720" height="2976" alt="distilbert_dark_pattern_classifier_architecture" src="https://github.com/user-attachments/assets/4bf777bf-a159-4c05-8ce9-1597681c41d2" />
+
+
 **How to read it**
 
 - **Self-attention** lets every word look at every other word. This is how "Hurry" links to "Only 2 left" (urgency), while "2" links to "business days" (benign). It reads context, not keywords.
@@ -115,6 +121,9 @@ YOLOv12 is a one-pass object detector. A 640×640 screenshot goes through a back
 - **Area attention** splits the feature map into 4 strips, giving transformer-style context at CNN speed.
 - **How we use it:** we fine-tune a *small* variant, which is realistic for a 12-hour build. The final layers are re-learned for the 5 classes. **OpenCV contour detection is the fallback.**
 - **Limit:** it finds components, not deception. A "button" box alone means nothing, so detections are paired with OCR, geometry checks and the text model.
+
+<img width="2720" height="1880" alt="yolov12x_network_overview" src="https://github.com/user-attachments/assets/3cb7eede-3c56-4ef0-949e-933cc7d00c47" />
+
 
 ---
 
