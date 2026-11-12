@@ -5,7 +5,7 @@
 **A multimodal auditor for dark patterns and deceptive UI in e-commerce.**
 Paste text, HTML or a screenshot. CheekShield flags manipulative design and shows the evidence for every finding: category, source text or UI region, confidence, risk level and a suggested fix.
 
-*TECHNOVUS Hackathon · AAYAM XI · NIT Agartala · AI & ML track · Team: `<your team name>`*
+*TECHNOVUS Hackathon · AAYAM XI · NIT Agartala · AI & ML track ·
 
 > Outputs are assistive indications of potentially deceptive design, not legal findings.
 
